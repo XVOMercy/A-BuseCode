@@ -114,14 +114,11 @@
 	soapMasterRequired = TRUE
 	var/used = 0
 
-/obj/item/soap/syndie_fu/attack_self(mob/user as mob)
-	if(soapMasterRequired && !imprinted_master)
+/obj/item/soap/syndie_fu/attack_self(mob/user)
+	if(soapMasterRequired && !imprinted_master && !used )
 		to_chat(user, "<span class='notice'>You press your thumb on [src] and suddenly, you are struck with the knowledge of Soap-Fu...</span>")
 		imprinted_master = user
 		used = 1
-
-
-
-
-
+		var/datum/martial_art/soap_fu/F = new/datum/martial_art/soap_fu(null)
+		F.teach(user)
 

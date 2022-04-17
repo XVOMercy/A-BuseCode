@@ -1,7 +1,7 @@
 /datum/martial_art/soap_fu
 	name = "Soap Fu"
 
-/datum/martial_art/cqc/grab_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
+/datum/martial_art/soap_fu/grab_act(mob/living/carbon/human/A, mob/living/carbon/human/D)
 	MARTIAL_ARTS_ACT_CHECK
 	var/obj/item/grab/G = D.grabbedby(A, 1)
 	if(G)
