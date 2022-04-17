@@ -58,13 +58,15 @@
 	department_head = list("Research Director")
 	selection_color = "#ffeeff"
 	access = list(ACCESS_ROBOTICS, ACCESS_TOX, ACCESS_TOX_STORAGE, ACCESS_RESEARCH, ACCESS_XENOBIOLOGY, ACCESS_XENOARCH, ACCESS_MINERAL_STOREROOM)
-	minimal_access = list(ACCESS_TOX, ACCESS_TOX_STORAGE, ACCESS_RESEARCH, ACCESS_XENOBIOLOGY, ACCESS_XENOARCH, ACCESS_MAINT_TUNNELS, ACCESS_MINERAL_STOREROOM)
-	alt_titles = list("Xenoarcheologist", "Anomalist", "Plasma Researcher", "Xenobiologist", "Chemical Researcher")
+	minimal_access = list(ACCESS_ROBOTICS, ACCESS_TOX, ACCESS_TOX_STORAGE, ACCESS_RESEARCH, ACCESS_XENOBIOLOGY, ACCESS_XENOARCH, ACCESS_MAINT_TUNNELS, ACCESS_MINERAL_STOREROOM)
+	alt_titles = list("Xenoarcheologist", "Anomalist", "Plasma Researcher", "Xenobiologist", "Chemical Researcher", "Roboticist", "Biomechanical Engineer", "Mechatronic Engineer")
 	minimal_player_age = 3
 	exp_map = list(EXP_TYPE_CREW = 300)
 	// All science-y guys get bonuses for maxing out their tech.
 	required_objectives = list(
-		/datum/job_objective/further_research
+		/datum/job_objective/further_research,
+		/datum/job_objective/make_cyborg,
+		/datum/job_objective/make_ripley
 	)
 
 	outfit = /datum/outfit/job/scientist
@@ -83,39 +85,3 @@
 	backpack = /obj/item/storage/backpack/science
 	satchel = /obj/item/storage/backpack/satchel_tox
 	dufflebag = /obj/item/storage/backpack/duffel/science
-
-
-/datum/job/roboticist
-	title = "Roboticist"
-	flag = JOB_ROBOTICIST
-	department_flag = JOBCAT_MEDSCI
-	total_positions = 2
-	spawn_positions = 2
-	is_science = 1
-	supervisors = "the research director"
-	department_head = list("Research Director")
-	selection_color = "#ffeeff"
-	access = list(ACCESS_ROBOTICS, ACCESS_TOX, ACCESS_TOX_STORAGE, ACCESS_TECH_STORAGE, ACCESS_MORGUE, ACCESS_RESEARCH, ACCESS_MINERAL_STOREROOM) //As a job that handles so many corpses, it makes sense for them to have morgue access.
-	minimal_access = list(ACCESS_ROBOTICS, ACCESS_TECH_STORAGE, ACCESS_MORGUE, ACCESS_RESEARCH, ACCESS_MAINT_TUNNELS, ACCESS_MINERAL_STOREROOM) //As a job that handles so many corpses, it makes sense for them to have morgue access.
-	alt_titles = list("Biomechanical Engineer","Mechatronic Engineer")
-	minimal_player_age = 3
-	exp_map = list(EXP_TYPE_CREW = 180)
-
-	required_objectives = list(
-		/datum/job_objective/make_cyborg,
-		/datum/job_objective/make_ripley
-	)
-
-	outfit = /datum/outfit/job/roboticist
-
-/datum/outfit/job/roboticist
-	name = "Roboticist"
-	jobtype = /datum/job/roboticist
-
-	uniform = /obj/item/clothing/under/rank/roboticist
-	suit = /obj/item/clothing/suit/storage/labcoat
-	belt = /obj/item/storage/belt/utility/full
-	shoes = /obj/item/clothing/shoes/black
-	l_ear = /obj/item/radio/headset/headset_sci
-	id = /obj/item/card/id/research
-	pda = /obj/item/pda/roboticist

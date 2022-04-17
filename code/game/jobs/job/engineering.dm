@@ -57,7 +57,7 @@
 	selection_color = "#fff5cc"
 	access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_MINERAL_STOREROOM)
 	minimal_access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_MINERAL_STOREROOM)
-	alt_titles = list("Maintenance Technician","Engine Technician","Electrician")
+	alt_titles = list("Maintenance Technician","Engine Technician","Electrician", "Life Support Specialist", "Atmospheric Technician")
 	minimal_player_age = 7
 	exp_map = list(EXP_TYPE_CREW = 300)
 	outfit = /datum/outfit/job/engineer
@@ -79,39 +79,3 @@
 	satchel = /obj/item/storage/backpack/satchel_eng
 	dufflebag = /obj/item/storage/backpack/duffel/engineering
 	box = /obj/item/storage/box/engineer
-
-
-
-/datum/job/atmos
-	title = "Life Support Specialist"
-	flag = JOB_ATMOSTECH
-	department_flag = JOBCAT_ENGSEC
-	total_positions = 3
-	spawn_positions = 2
-	is_engineering = 1
-	supervisors = "the chief engineer"
-	department_head = list("Chief Engineer")
-	selection_color = "#fff5cc"
-	access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_MINERAL_STOREROOM)
-	minimal_access = list(ACCESS_EVA, ACCESS_ATMOSPHERICS, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_EMERGENCY_STORAGE, ACCESS_CONSTRUCTION, ACCESS_MINERAL_STOREROOM, ACCESS_TECH_STORAGE)
-	alt_titles = list("Atmospheric Technician")
-	minimal_player_age = 7
-	exp_map = list(EXP_TYPE_CREW = 300)
-	outfit = /datum/outfit/job/atmos
-
-/datum/outfit/job/atmos
-	name = "Life Support Specialist"
-	jobtype = /datum/job/atmos
-
-	uniform = /obj/item/clothing/under/rank/atmospheric_technician
-	belt = /obj/item/storage/belt/utility/atmostech
-	shoes = /obj/item/clothing/shoes/workboots
-	l_ear = /obj/item/radio/headset/headset_eng
-	id = /obj/item/card/id/engineering
-	pda = /obj/item/pda/atmos
-
-	backpack = /obj/item/storage/backpack/industrial
-	satchel = /obj/item/storage/backpack/satchel_eng
-	dufflebag = /obj/item/storage/backpack/duffel/atmos
-	box = /obj/item/storage/box/engineer
-

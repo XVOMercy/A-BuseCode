@@ -927,6 +927,14 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	cost = 1
 	surplus = 50
 
+/datum/uplink_item/stealthy_weapons/soap_fu
+	name = "Combat Soap"
+	desc = "Voted as Drask's favorite breakfast for 600 years in a row, it is perfect for combat and cleaning. Once the user imprints their thumb onto the soap, it gives them the knowledge of Soap-Fu while still retaining it's soap-like abilities."
+	reference = "CSOAP"
+	item = /obj/item/soap/syndie_fu
+	cost = 5
+	surplus = 50
+
 /datum/uplink_item/stealthy_weapons/dart_pistol
 	name = "Dart Pistol Kit"
 	desc = "A miniaturized version of a normal syringe gun. It is very quiet when fired and can fit into any space a small item can. Comes with 3 syringes, a knockout poison, a silencing agent and a deadly neurotoxin."

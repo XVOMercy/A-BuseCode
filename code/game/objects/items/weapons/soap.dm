@@ -12,6 +12,8 @@
 	throw_range = 20
 	discrete = 1
 	var/cleanspeed = 50 //slower than mop
+	var/soapMasterRequired = FALSE
+	var/mob/living/carbon/human/imprinted_master = null
 
 /obj/item/soap/ComponentInitialize()
 	AddComponent(/datum/component/slippery, src, 4, 2, 100, 0, FALSE)
@@ -104,3 +106,22 @@
 	desc = "An untrustworthy bar of soap made of strong chemical agents that dissolve blood faster."
 	icon_state = "soapsyndie"
 	cleanspeed = 10 //much faster than mop so it is useful for traitors who want to clean crime scenes
+
+/obj/item/soap/syndie_fu
+	desc = "An untrustworthy bar of soap made of strong chemical agents that dissolve blood faster. It's imprinted with the letter 'C'."
+	icon_state = "soapsyndie"
+	cleanspeed = 35 //slightly better than a deluxe because it's intended for combat, not cleaning.
+	soapMasterRequired = TRUE
+	var/used = 0
+
+/obj/item/soap/syndie_fu/attack_self(mob/user as mob)
+	if(soapMasterRequired && !imprinted_master)
+		to_chat(user, "<span class='notice'>You press your thumb on [src] and suddenly, you are struck with the knowledge of Soap-Fu...</span>")
+		imprinted_master = user
+		used = 1
+
+
+
+
+
+
