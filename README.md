@@ -2,9 +2,6 @@
 
 # Useful Documents
 
-- [Autodocumentation Guide](.github/AUTODOC_GUIDE.md)
-- [Code of Conduct](./CODE_OF_CONDUCT.md)
-- [Contribution Guide](.github/CONTRIBUTING.md)
 - [Installation Guide](.github/DOWNLOADING.md)
 
 ---
