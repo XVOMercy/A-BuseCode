@@ -1,11 +1,11 @@
 /// Config holder for all general/misc things
 /datum/configuration_section/general_configuration
 	/// Server name for the BYOND hub
-	var/server_name = "Paradise Station"
+	var/server_name = "A-Buse Station"
 	/// Tagline for the hub entry
-	var/server_tag_line = "The perfect mix of RP & action"
+	var/server_tag_line = "Dev Server"
 	/// Server features in a newline
-	var/server_features = "Medium RP, varied species/jobs"
+	var/server_features = "Admin Abuse? Never! Banned for self-antagging."
 	/// Allow character OOC notes
 	var/allow_character_metadata = TRUE
 	/// Time in seconds for the pregame lobby

@@ -839,7 +839,7 @@
 /obj/item/book/manual/chef_recipes
     name = "Chef Recipes"
     icon_state = "cook_book"
-    author = "NanoTrasen"
+    author = "Nanotrasen"
     title = "Chef Recipes"
     dat = {"
 

@@ -14,7 +14,7 @@
 	/// SQL password
 	var/password = "root" // Dont do this in prod. Please......
 	/// Database name
-	var/db = "paradise_gamedb"
+	var/db = "abuse_gamedb"
 	/// Time in seconds for async queries to time out
 	var/async_query_timeout = 10
 	/// Thread limit for async queries

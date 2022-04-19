@@ -150,8 +150,6 @@
 	item_state = "jensen"
 	item_color = "jensen"
 
-//Paradise Station
-
 /obj/item/clothing/suit/armor/hos/hosnavyjacket
 	name = "head of security's navy jacket"
 	icon_state = "hosdnavyjacket"

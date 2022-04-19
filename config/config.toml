@@ -66,31 +66,37 @@ enable_localhost_autoadmin = true
 # +PROCCALL = Access to call procs on anything. Be careful who you grant this too!
 # +VIEWRUNTIMES = Allows a player to view the runtimes of the server, but not use other debug verbs
 admin_ranks = [
-	# Format: {name = "My Rank", rights = ["+LIST", "+OF", "+RIGHTS"]}
+	# Format: {name = "[RANK]", rights = ["+LIST", "+OF", "+RIGHTS"]}
 	{name = "Helper", rights = ["+MENTOR"]},
 	{name = "Game Admin", rights = ["+ADMIN", "+BAN", "+STEALTH", "+REJUVINATE", "+DEBUG", "+BUILDMODE", "+EVENT", "+SERVER", "+POSSESS", "+PROCCALL", "+VAREDIT", "+SOUND", "+SPAWN"]},
 	{name = "Head of Staff", rights = ["+EVERYTHING"]},
 	{name = "Head of Code", rights = ["+EVERYTHING"]},
 	{name = "Head of Community", rights = ["+EVERYTHING"]},
-	{name = "Host", rights = ["+EVERYTHING"]}
+	{name = "Host", rights = ["+EVERYTHING"]},
+	{name = "Discord Admin", rights = ["+MENTOR"]},
+	{name = "Coder", rights = ["+MENTOR", "+DEBUG"]}
 ]
 # List of people and the admin rank they are assigned to
 admin_assignments = [
-	#{ckey = "Your Name Here", rank = "Hosting Provider"}
+	#{ckey = "[CKEY]", rank = "[RANK]"}
 	{ckey = "LongLiveChaos", rank = "Head of Code"},
 	{ckey = "silverplate", rank = "Head of Staff"},
-	{ckey = "mrflippurz", rank = "Host"}
+	{ckey = "mrflippurz", rank = "Host"},
+	{ckey = "Bleadf", rank = "Discord Admin"},
+	{ckey = "Goodapollo676", rank = "Discord Admin"}
 ]
 # Allow admins to set their own OOC colour
 allow_admin_ooc_colour = true
 # Map of admin rank colours to their respective rank. Note you can use hex or colour name here.
 admin_rank_colour_map = [
-	{name = "Head of Staff", colour = "#e74c3c"},
+	{name = "Head of Staff", colour = "#71368a"},
 	{name = "Host", colour = "#992d22"},
-	{name = "Head of Code", colour = "#1abc9c"},
-	{name = "Head of Community", colour = "#e91e63"},
-	{name = "Game Admin", colour = "#238afa"},
-	{name = "Mentor", colour = "#f1c40f"}
+	{name = "Head of Code", colour = "#206694"},
+	{name = "Head of Community", colour = "#1f8b4c"},
+	{name = "Game Admin", colour = "#a049c9"},
+	{name = "Mentor", colour = "#35bd16"},
+	{name = "Discord Admin", colour = "#e74c3c"}
+	{name = "Coder", colour = "#3498db"}
 ]
 # Map of common CIDs that should not be banned, plus their reasons
 common_cid_map = [
@@ -152,7 +158,7 @@ sql_address = "127.0.0.1"
 # SQL server port
 sql_port = 3306
 # SQL server database name
-sql_database = "paradise_gamedb"
+sql_database = "abuse_gamedb"
 # SQL server username
 sql_username = "root"
 # SQL server password
@@ -438,16 +444,14 @@ job_slot_amounts = [
 	{name = "Research Director", lowpop = 1, highpop = 1},
 	{name = "Chief Medical Officer", lowpop = 1, highpop = 1},
 	# Engineering
-	{name = "Atmospheric Technician", lowpop = 3, highpop = 4},
-	{name = "Station Engineer", lowpop = 5, highpop = 6},
+	{name = "Station Engineer", lowpop = 8, highpop = 9},
 	# Medical
 	{name = "Chemist", lowpop = 2, highpop = 2},
 	{name = "Geneticist", lowpop = 2, highpop = 2},
 	{name = "Medical Doctor", lowpop = 5, highpop = 6},
 	{name = "Virologist", lowpop = 1, highpop = 1},
 	# Science
-	{name = "Robotocist", lowpop = 2, highpop = 2},
-	{name = "Scientist", lowpop = 6, highpop = 7},
+	{name = "Scientist", lowpop = 8, highpop = 9},
 	# Security
 	{name = "Detective", lowpop = 1, highpop = 1},
 	{name = "Security Officer", lowpop = 8, highpop = 9},
