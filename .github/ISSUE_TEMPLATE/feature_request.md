@@ -7,4 +7,4 @@ assignees: ''
 
 ---
 
-Please place all features requests here: https://www.paradisestation.org/forum/60-suggestions/
+Please post the link to this feature request inside #suggestions as a reminder for us to check it for optimal priority.
