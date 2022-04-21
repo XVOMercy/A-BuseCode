@@ -16,7 +16,7 @@ GLOBAL_DATUM_INIT(captain_announcement, /datum/announcement/minor, new(do_newsca
 	exp_map = list(EXP_TYPE_COMMAND = 1200)
 	disabilities_allowed = 0
 	outfit = /datum/outfit/job/captain
-	important_information = "This role requires you to coordinate a department. You are required to be familiar with Standard Operating Procedure (Command), basic job duties, and act professionally (roleplay)."
+	important_information = "This role requires you to coordinate a department. You are required to be familiar with the Standard Operating Procedures of Command, basic job duties, and act professionally (roleplay)."
 
 /datum/job/captain/get_access()
 	return get_all_accesses()
