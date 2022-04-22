@@ -12,7 +12,7 @@
 	clown_removal_text = "You lose your syndicate training and return to your own clumsy, clownish self."
 	wiki_page_name = "Traitor"
 	/// Should the traitor get codewords?
-	var/give_codewords = TRUE
+	var/give_codewords = FALSE
 	/// Should we give the traitor their uplink?
 	var/give_uplink = TRUE
 
