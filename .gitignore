@@ -34,3 +34,4 @@ stddef.dm
 
 /config/*
 !config/**/*/
+config/config.toml
