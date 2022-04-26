@@ -20,6 +20,8 @@
 	var/disable_certain_round_early_end = FALSE
 	/// Amount of objectives traitors should get. Does not include escape or hijack.
 	var/traitor_objectives_amount = 2
+		/// Amount of objectives traitors should get. Does not include escape or hijack.
+	var/ninja_objectives_amount = 2
 	/// Enable player limits on gamemodes? Disabling can be useful for testing
 	var/enable_gamemode_player_limit = TRUE
 
