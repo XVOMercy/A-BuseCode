@@ -10,6 +10,7 @@
 #define TARGET_INVALID_BLACKLISTED	9
 
 //gamemode istype helpers
+#define GAMEMODE_IS_NINJA		(SSticker && istype(SSticker.mode, /datum/game_mode/ninja))
 #define GAMEMODE_IS_BLOB		(SSticker && istype(SSticker.mode, /datum/game_mode/blob))
 #define GAMEMODE_IS_CULT		(SSticker && istype(SSticker.mode, /datum/game_mode/cult))
 #define GAMEMODE_IS_HEIST		(SSticker && istype(SSticker.mode, /datum/game_mode/heist))
@@ -55,3 +56,5 @@
 #define SPECIAL_ROLE_XENOMORPH_SENTINEL "Xenomorph Sentinel"
 #define SPECIAL_ROLE_XENOMORPH_LARVA "Xenomorph Larva"
 #define SPECIAL_ROLE_EVENTMISC "Event Role"
+#define SPECIAL_ROLE_NINJA "Ninja"
+

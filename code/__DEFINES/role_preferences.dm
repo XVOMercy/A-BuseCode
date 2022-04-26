@@ -18,7 +18,7 @@
 #define ROLE_PAI				"pAI"
 #define ROLE_CULTIST			"cultist"
 #define ROLE_BLOB				"blob"
-#define ROLE_NINJA				"space ninja"
+#define ROLE_NINJA				"ninja"
 #define ROLE_MONKEY				"monkey"
 #define ROLE_GANG				"gangster"
 #define ROLE_SHADOWLING			"shadowling"
@@ -73,7 +73,8 @@ GLOBAL_LIST_INIT(special_roles, list(
 	ROLE_TRAITOR = /datum/game_mode/traitor, 			// Traitor
 	ROLE_VAMPIRE = /datum/game_mode/vampire, 			// Vampire
 	ROLE_ALIEN, 										// Xenomorph
-	ROLE_WIZARD = /datum/game_mode/wizard 				// Wizard
+	ROLE_WIZARD = /datum/game_mode/wizard, 				// Wizard
+	ROLE_NINJA = /datum/game_mode/ninja					// Ninja
 	// UNUSED/BROKEN ANTAGS
 //	ROLE_HOG_GOD = /datum/game_mode/hand_of_god,
 //	ROLE_HOG_CULTIST = /datum/game_mode/hand_of_god,

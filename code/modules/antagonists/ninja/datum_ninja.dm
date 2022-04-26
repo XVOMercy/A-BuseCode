@@ -2,8 +2,7 @@
 // Syndicate Ninjas.
 /datum/antagonist/ninja
 	name = "Ninja"
-	roundend_category = "ninjas"
-	job_rank = ROLE_NINJA
+	roundend_category = "ninja"
 	special_role = SPECIAL_ROLE_NINJA
 	give_objectives = TRUE
 	antag_hud_name = "hudsyndicate"
@@ -14,7 +13,7 @@
 	/// Should the ninja get codewords?
 	var/give_codewords = FALSE
 	/// Should we give the ninja their uplink?
-	var/give_uplink = TRUE
+	var/give_uplink = FALSE
 
 /datum/antagonist/ninja/on_gain()
 	// Create this in case the ninja wants to mindslaves someone.
