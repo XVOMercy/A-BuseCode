@@ -435,8 +435,8 @@
 		if(SSticker.mode.apprentices.len)
 			dat += check_role_table("Apprentices", SSticker.mode.apprentices)
 
-		/*if(ticker.mode.ninjas.len)
-			dat += check_role_table("Ninjas", ticker.mode.ninjas)*/
+		if(SSticker.mode.ninjas.len)
+			dat += check_role_table("Ninja", SSticker.mode.ninjas)
 
 		if(SSticker.mode.cult.len)
 			var/datum/game_mode/gamemode = SSticker.mode
