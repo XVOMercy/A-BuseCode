@@ -2,13 +2,13 @@ macro "default"
 
 
 menu "menu"
-	elem 
+	elem
 		name = "&File"
-	elem 
+	elem
 		name = "&Quick screenshot\tF2"
 		command = ".screenshot auto"
 		category = "&File"
-	elem 
+	elem
 		name = "&Save screenshot as...\tShift+F2"
 		command = ".screenshot"
 		category = "&File"
@@ -16,16 +16,16 @@ menu "menu"
 		name = "&Reconnect"
 		command = ".reconnect"
 		category = "&File"
-	elem 
+	elem
 		name = ""
 		category = "&File"
-	elem 
+	elem
 		name = "&Quit"
 		command = ".quit"
 		category = "&File"
-	elem 
+	elem
 		name = "&Icons"
-	elem 
+	elem
 		name = "&Size"
 		category = "&Icons"
 	elem "stretch"
@@ -65,7 +65,7 @@ menu "menu"
 		category = "&Size"
 		can-check = true
 		group = "size"
-	elem 
+	elem
 		name = "&Scaling"
 		category = "&Icons"
 	elem "NN"
@@ -91,9 +91,9 @@ menu "menu"
 		command = ".winset \"menu.textmode.is-checked=true?mapwindow.map.text-mode=true:mapwindow.map.text-mode=false\""
 		category = "&Icons"
 		can-check = true
-	elem 
+	elem
 		name = "&Options"
-	elem 
+	elem
 		name = "&Open Volume Mixer"
 		command = "Open-Volume-Mixer"
 		category = "&Options"
@@ -104,13 +104,13 @@ menu "menu"
 		is-checked = true
 		saved-params = "is-checked"
 		command = ".winset \"menu.statusbar.is-checked=true?mapwindow.status_bar.is-visible=true:mapwindow.status_bar.is-visible=false\""
-	elem 
+	elem
 		name = "&Help"
-	elem 
+	elem
 		name = "&Admin help\tF1"
 		command = "adminhelp"
 		category = "&Help"
-	elem 
+	elem
 		name = "&Hotkeys"
 		command = "Hotkey-Help"
 		category = "&Help"
@@ -122,7 +122,7 @@ window "mainwindow"
 		size = 640x440
 		is-default = true
 		saved-params = "pos;size;is-minimized;is-maximized"
-		title = "Paradise Station 13"
+		title = "A-Buse Station"
 		statusbar = false
 		is-maximized = true
 		icon = 'icons\\paradise.png'
@@ -269,57 +269,27 @@ window "rpane"
 		size = 50x16
 		text = "Forum"
 		command = "forum"
-	elem "rulesb"
-		type = BUTTON
-		pos = 238,7
-		size = 50x16
-		text = "Rules"
-		command = "rules"
 	elem "githubb"
 		type = BUTTON
-		pos = 290,7
+		pos = 186,7
 		size = 50x16
 		text = "GitHub"
 		command = "github"
 	elem "webmap"
 		type = BUTTON
-		pos = 342,7
+		pos = 238,7
 		size = 50x16
 		text = "Map"
 		command = "webmap"
-	elem "changelog"
-		type = BUTTON
-		pos = 404,7
-		size = 67x16
-		text = "Changelog"
-		command = "Changelog"
 	elem "discordb"
 		type = BUTTON
-		pos = 473,7
+		pos = 290,7
 		size = 60x16
 		font-style = "bold"
 		text-color = #ffffff
 		background-color = #7289da
 		text = "Discord"
 		command = "discord"
-	elem "karma"
-		type = BUTTON
-		pos = 535,7
-		size = 60x16
-		font-style = "bold"
-		text-color = #ffffff
-		background-color = #ff4500
-		text = "Karma"
-		command = "karmashop"
-	elem "donate"
-		type = BUTTON
-		pos = 597,7
-		size = 60x16
-		font-style = "bold"
-		text-color = #ffffff
-		background-color = #008000
-		text = "Donate"
-		command = "Donate"
 
 window "infowindow"
 	elem "infowindow"
