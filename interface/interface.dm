@@ -17,7 +17,7 @@
 /client/verb/forum()
 	set name = "forum"
 	set desc = "Visit the forum."
-	set hidden = 1
+	set hidden = 0
 	if(GLOB.configuration.url.forum_url)
 		if(alert("Open the forum in your browser?", null, "Yes", "No") == "Yes")
 			if(GLOB.configuration.url.forum_link_url && prefs && !prefs.fuid)
@@ -29,7 +29,7 @@
 /client/verb/rules()
 	set name = "Rules"
 	set desc = "View the server rules."
-	set hidden = 1
+	set hidden = 0
 	if(GLOB.configuration.url.rules_url)
 		if(alert("This will open the rules in your browser. Are you sure?", null, "Yes", "No") == "No")
 			return
@@ -72,7 +72,7 @@
 /client/verb/donate()
 	set name = "Donate"
 	set desc = "Donate to help with hosting costs."
-	set hidden = 1
+	set hidden = 0
 	if(GLOB.configuration.url.donations_url)
 		if(alert("This will open the donation page in your browser. Are you sure?", null, "Yes", "No") == "No")
 			return
