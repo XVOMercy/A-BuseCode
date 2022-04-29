@@ -636,3 +636,4 @@ CREATE TABLE `instance_data_cache` (
 	`last_updated` TIMESTAMP NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
 	PRIMARY KEY (`server_id`, `key_name`) USING HASH
 ) COLLATE='utf8mb4_general_ci' ENGINE=MEMORY;
+admin

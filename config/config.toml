@@ -42,7 +42,7 @@
 
 # Set this to true if you are using database-based admins, or false if you want to define them in this file
 # If the database fails, this file will be used as fallback
-use_database_admins = false
+use_database_admins = true
 # Auto authenticate localhost users as admin? Useful for test servers, disable in producation
 enable_localhost_autoadmin = true
 # List of admin rank assignments and their permissions
@@ -95,7 +95,7 @@ admin_rank_colour_map = [
 	{name = "Head of Community", colour = "#1f8b4c"},
 	{name = "Game Admin", colour = "#a049c9"},
 	{name = "Mentor", colour = "#35bd16"},
-	{name = "Discord Admin", colour = "#e74c3c"}
+	{name = "Discord Admin", colour = "#e74c3c"},
 	{name = "Coder", colour = "#3498db"}
 ]
 # Map of common CIDs that should not be banned, plus their reasons
@@ -150,7 +150,7 @@ ipc_screens = [
 # If you are running in production, you will want to be using a database
 
 # Enable/disable the database on a whole
-sql_enabled = false
+sql_enabled = true
 # SQL version. If this is a mismatch, round start will be delayed
 sql_version = 35
 # SQL server address. Can be an IP or DNS name
@@ -158,11 +158,11 @@ sql_address = "127.0.0.1"
 # SQL server port
 sql_port = 3306
 # SQL server database name
-sql_database = "abuse_gamedb"
+sql_database = "paradise_gamedb"
 # SQL server username
-sql_username = "root"
+sql_username = "AbuseStation"
 # SQL server password
-sql_password = "please use something secure in a production environment"
+sql_password = "86f8RucEtuya"
 # Time in seconds for async queries to time out
 async_query_timeout = 10
 # How many threads is the async SQL engine allowed to open. 50 is normal. Trust me.
@@ -769,9 +769,9 @@ external_tos_handler = false
 # Server location for world reboot. Don't include the byond://, just give the address and port.
 #reboot_url = "byond.paradisestation.org:6666"
 # Forum address
-#forum_url = "https://www.paradisestation.org/forum/"
+#forum_url = "Placeholder"
 # Wiki address
-#wiki_url = "https://www.paradisestation.org/wiki"
+#wiki_url = "https://abuse-station.fandom.com/wiki/A-Buse_Station_Wiki"
 # Rules address
 #rules_url = "https://www.paradisestation.org/rules"
 # Github address

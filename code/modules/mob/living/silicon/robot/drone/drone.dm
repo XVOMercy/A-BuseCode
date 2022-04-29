@@ -33,6 +33,8 @@
 	// What objects can drones bump into
 	var/static/list/allowed_bumpable_objects = list(/obj/machinery/door, /obj/machinery/recharge_station, /obj/machinery/disposal/deliveryChute,
 													/obj/machinery/teleport/hub, /obj/effect/portal, /obj/structure/transit_tube/station)
+	//Hat variable?
+	var/obj/item/inventory_head
 
 	//Used for self-mailing.
 	var/mail_destination = 0
@@ -392,3 +394,15 @@
 		qdel(src)
 		return TRUE
 	return ..()
+
+///hat deletion code?
+/mob/living/silicon/robot/drone/handle_atom_del(atom/A)
+	if(A == inventory_head)
+		inventory_head = null
+		regenerate_icons()
+	return ..()
+
+//hat detection code???
+/mob/living/silicon/robot/drone/proc/get_invslot_content()
+	var/dat = "<br><B>Head:</B> <A href='?src=[UID()];[inventory_head ? "remove_inv=head'>[html_encode(inventory_head)]" : "add_inv=head'>Nothing"]</A>"
+	return dat
