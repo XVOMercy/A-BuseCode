@@ -158,11 +158,11 @@ sql_address = "127.0.0.1"
 # SQL server port
 sql_port = 3306
 # SQL server database name
-sql_database = "abuse_gamedb"
+sql_database = "paradise_gamedb"
 # SQL server username
-sql_username = "root"
+sql_username = "AbuseStation"
 # SQL server password
-sql_password = "please use something secure in a production environment"
+sql_password = "86f8RucEtuya"
 # Time in seconds for async queries to time out
 async_query_timeout = 10
 # How many threads is the async SQL engine allowed to open. 50 is normal. Trust me.
