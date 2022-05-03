@@ -62,6 +62,9 @@
 /// should this object be allowed to be contaminated
 #define RAD_NO_CONTAMINATE_2	32768
 
+/// Prevents malf AI animate + overload ability
+#define NO_MALF_EFFECT_2 (1<<17)
+
 //Reagent flags
 #define REAGENT_NOREACT			1
 
